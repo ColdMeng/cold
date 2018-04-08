@@ -14,13 +14,13 @@ public class Custom {
         this.foodFactory = foodFactory;
     }
 
-    public float orderBeverage(int num){
+    public float orderBeverage(int num) {
         AbstractBeverage beverage = foodFactory.getBeverage(num);
         beverage.printFoodMessage();
         return beverage.totalPrice();
     }
 
-    public float orderChicken(int num){
+    public float orderChicken(int num) {
         AbstractChiecken chiecken = foodFactory.getChiecken(num);
         chiecken.printFoodMessage();
         return chiecken.totalPrice();
